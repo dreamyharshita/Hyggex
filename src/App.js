@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Header from "./Components/Header";
+import CurrentPageBar from "./Components/CurrentPageBar";
+import MidScreen from "./Components/MidScreen";
+import MidBar from "./Components/MidBar";
+import Faq from "./Components/Faq";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Header/>
+    <CurrentPageBar/>
+   <MidScreen/>
+   <MidBar/>
+   <Faq/>
     </div>
+
+    
   );
 }
 
